@@ -1,0 +1,55 @@
+{
+  "author": "闫瑞锋",
+  "bugs": {
+    "url": "https://github.com/yrjwcharm/react-native-svgaplayer/issues"
+  },
+  "codegenConfig": {
+    "android": {
+      "javaPackageName": "com.svgaplayer"
+    },
+    "ios": {
+      "componentProvider": {
+        "RNSvgaPlayer": "RCTSvgaPlayer"
+      }
+    },
+    "jsSrcsDir": "./src/specs",
+    "name": "RNSvgaPlayerSpec",
+    "type": "components"
+  },
+  "dependencies": {},
+  "description": "这是一款使用ReactNative Fabric新架构加载Svga动画的开源插件",
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "react": "18.2.0",
+    "react-native": "0.72.5"
+  },
+  "files": [
+    "android",
+    "ios",
+    "rn-newarch-svga-player.podspec",
+    "src"
+  ],
+  "homepage": "https://github.com/yrjwcharm/rn-newarch-svga-player#readme",
+  "keywords": [
+    "fabric",
+    "player",
+    "react-native",
+    "svga",
+    "SvgaPlayer"
+  ],
+  "license": "ISC",
+  "main": "index.tsx",
+  "name": "rn-newarch-svga-player",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yrjwcharm/rn-newarch-svga-player.git"
+  },
+  "scripts": {
+    "codegen-lib": "react-native codegen-lib-harmony --no-safety-check --npm-package-name react-native-ohos-svgaplayer --cpp-output-path ../../harmony/svgaplayer/src/main/cpp/generated --ets-output-path ../../harmony/svgaplayer/src/main/ets/generated --turbo-modules-spec-paths ./src  --arkts-components-spec-paths ./src"
+  },
+  "version": "1.1.2"
+}
